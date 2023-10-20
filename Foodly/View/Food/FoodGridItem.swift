@@ -14,9 +14,12 @@ struct FoodGridItem: View {
     var body: some View {
         VStack ( spacing: 10) {
             FoodRemoteImage(urlString: food.imageURL)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 100, height: 100)
+                .clipShape(.rect(cornerRadius: 50))
+                .padding()
             VStack (alignment: .leading, spacing: 10) {
                 Text(food.name)
-                    .font(.title3)
                     .fontWeight(.bold)
                     .scaledToFit()
                     .minimumScaleFactor(0.5)

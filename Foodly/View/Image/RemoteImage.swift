@@ -23,16 +23,10 @@ struct RemoteImage: View {
     var image: Image?
     var body: some View {
         image?.resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 100, height: 100)
-            .clipShape(.rect(cornerRadius: 50))
-            .padding() ??
+             ??
         Image("placeholder")
             .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 100, height: 100)
-            .clipShape(.rect(cornerRadius: 10))
-            .padding()
+            
     }
 }
 

@@ -11,20 +11,28 @@ struct FoodGridView: View {
     @StateObject var viewModel = FoodGridViewModel()
     var body: some View {
         ZStack {
+
             NavigationView {
                 ScrollView {
-                    Spacer(minLength: 50)
                     LazyVGrid(columns: viewModel.columns, spacing: 20) {
                         ForEach(viewModel.food) { food in
-                            FoodGridItem(food: food)
+                            NavigationLink {
+                                FoodDetailsView(food: food)
+                            } label: {
+                                FoodGridItem(food: food)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+
+                            
                         }
                     }
                     
                 }
-                .navigationTitle("Explore Foodly")
+                .navigationTitle("Foodly ♨︎")
                 .padding()
-                .background(Color.Background)
+
             }
+            
             .onAppear {
                 viewModel.getFood()
             }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C234DCC2AE28D9E0027DD44 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C234DCB2AE28D9E0027DD44 /* RemoteImage.swift */; };
 		2C234DCF2AE296D00027DD44 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C234DCE2AE296D00027DD44 /* LoadingView.swift */; };
+		2C533D2C2AE2BB3800958081 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C533D2B2AE2BB3800958081 /* AccountView.swift */; };
+		2C533D2E2AE2C09E00958081 /* FoodDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C533D2D2AE2C09E00958081 /* FoodDetailsView.swift */; };
 		2C7304DB2AE1B71C0044C005 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7304DA2AE1B71C0044C005 /* Food.swift */; };
 		2C7304DF2AE1DC0E0044C005 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7304DE2AE1DC0E0044C005 /* NetworkManager.swift */; };
 		2C95FB432AE163AC0044C82A /* FoodlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95FB422AE163AC0044C82A /* FoodlyApp.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		2C234DCB2AE28D9E0027DD44 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		2C234DCE2AE296D00027DD44 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		2C533D2B2AE2BB3800958081 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		2C533D2D2AE2C09E00958081 /* FoodDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsView.swift; sourceTree = "<group>"; };
 		2C7304DA2AE1B71C0044C005 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		2C7304DE2AE1DC0E0044C005 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2C95FB3F2AE163AC0044C82A /* Foodly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +74,14 @@
 				2C234DCE2AE296D00027DD44 /* LoadingView.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2C533D2A2AE2BB2C00958081 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2C533D2B2AE2BB3800958081 /* AccountView.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 		2C7304D92AE1B7100044C005 /* Models */ = {
@@ -147,6 +159,7 @@
 		2C95FB532AE16EED0044C82A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2C533D2A2AE2BB2C00958081 /* Account */,
 				2C95FB542AE16EFF0044C82A /* Food */,
 			);
 			path = Screens;
@@ -157,6 +170,7 @@
 			children = (
 				2C95FB552AE16F130044C82A /* FoodGridView.swift */,
 				2C95FB572AE16FD50044C82A /* FoodGridViewModel.swift */,
+				2C533D2D2AE2C09E00958081 /* FoodDetailsView.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -242,9 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C234DCC2AE28D9E0027DD44 /* RemoteImage.swift in Sources */,
+				2C533D2E2AE2C09E00958081 /* FoodDetailsView.swift in Sources */,
 				2C7304DB2AE1B71C0044C005 /* Food.swift in Sources */,
 				2C95FB562AE16F130044C82A /* FoodGridView.swift in Sources */,
 				2C234DCF2AE296D00027DD44 /* LoadingView.swift in Sources */,
+				2C533D2C2AE2BB3800958081 /* AccountView.swift in Sources */,
 				2C95FB452AE163AC0044C82A /* FoodlyView.swift in Sources */,
 				2C95FB5B2AE175C70044C82A /* FoodGridItem.swift in Sources */,
 				2C7304DF2AE1DC0E0044C005 /* NetworkManager.swift in Sources */,
