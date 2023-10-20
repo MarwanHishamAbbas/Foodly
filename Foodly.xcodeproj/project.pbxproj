@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C234DCC2AE28D9E0027DD44 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C234DCB2AE28D9E0027DD44 /* RemoteImage.swift */; };
+		2C234DCF2AE296D00027DD44 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C234DCE2AE296D00027DD44 /* LoadingView.swift */; };
 		2C7304DB2AE1B71C0044C005 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7304DA2AE1B71C0044C005 /* Food.swift */; };
 		2C7304DF2AE1DC0E0044C005 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7304DE2AE1DC0E0044C005 /* NetworkManager.swift */; };
 		2C95FB432AE163AC0044C82A /* FoodlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95FB422AE163AC0044C82A /* FoodlyApp.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		2C234DCB2AE28D9E0027DD44 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		2C234DCE2AE296D00027DD44 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		2C7304DA2AE1B71C0044C005 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		2C7304DE2AE1DC0E0044C005 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2C95FB3F2AE163AC0044C82A /* Foodly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,14 @@
 				2C234DCB2AE28D9E0027DD44 /* RemoteImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		2C234DCD2AE296C10027DD44 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C234DCE2AE296D00027DD44 /* LoadingView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		2C7304D92AE1B7100044C005 /* Models */ = {
@@ -154,6 +164,7 @@
 		2C95FB592AE175A70044C82A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C234DCD2AE296C10027DD44 /* UIKit */,
 				2C234DCA2AE28D7B0027DD44 /* Image */,
 				2C234DC92AE28D730027DD44 /* Food */,
 			);
@@ -233,6 +244,7 @@
 				2C234DCC2AE28D9E0027DD44 /* RemoteImage.swift in Sources */,
 				2C7304DB2AE1B71C0044C005 /* Food.swift in Sources */,
 				2C95FB562AE16F130044C82A /* FoodGridView.swift in Sources */,
+				2C234DCF2AE296D00027DD44 /* LoadingView.swift in Sources */,
 				2C95FB452AE163AC0044C82A /* FoodlyView.swift in Sources */,
 				2C95FB5B2AE175C70044C82A /* FoodGridItem.swift in Sources */,
 				2C7304DF2AE1DC0E0044C005 /* NetworkManager.swift in Sources */,

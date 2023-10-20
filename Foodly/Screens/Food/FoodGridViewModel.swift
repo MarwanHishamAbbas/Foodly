@@ -17,6 +17,7 @@ final class FoodGridViewModel: ObservableObject {
         
         NetworkManager.shared.getFood { result in
             DispatchQueue.main.async {
+                self.isLoading = false
                 switch result {
                 case .success(let food):
                     self.food = food

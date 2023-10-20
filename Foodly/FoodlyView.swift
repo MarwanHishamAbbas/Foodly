@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FoodlyView: View {
-    @State var isActive: Bool = false
     var body: some View {
             TabView {
                 FoodGridView()

@@ -10,6 +10,7 @@ import SwiftUI
 struct FoodGridView: View {
     @StateObject var viewModel = FoodGridViewModel()
     var body: some View {
+        ZStack {
             NavigationView {
                 ScrollView {
                     Spacer(minLength: 50)
@@ -17,22 +18,22 @@ struct FoodGridView: View {
                         ForEach(viewModel.food) { food in
                             FoodGridItem(food: food)
                         }
-   
                     }
                     
                 }
                 .navigationTitle("Explore Foodly")
                 .padding()
                 .background(Color.Background)
-                
             }
             .onAppear {
                 viewModel.getFood()
             }
-    
-            
-        
+            if viewModel.isLoading {
+                LoadingView()
+            }
+        }
     }
+       
 }
 
 #Preview {
