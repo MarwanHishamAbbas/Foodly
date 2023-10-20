@@ -13,15 +13,7 @@ struct FoodGridItem: View {
     
     var body: some View {
         VStack ( spacing: 10) {
-            
-            Image("placeholder")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 100, height: 100)
-                .clipShape(.rect(cornerRadius: 10))
-                .padding()
-            
-            
+            FoodRemoteImage(urlString: food.imageURL)
             VStack (alignment: .leading, spacing: 10) {
                 Text(food.name)
                     .font(.title3)
@@ -66,7 +58,7 @@ struct FoodGridItem: View {
                             .frame(width: 25, height: 25)
                             .padding(.all, 10)
                             .fontWeight(.bold)
-                            .tint(Color.white)
+                            .foregroundStyle(Color.white)
                             .background(Color.BrandPrimary)
                             .clipShape(.rect(cornerRadius: 5))
                     }
@@ -74,7 +66,6 @@ struct FoodGridItem: View {
             }
         }
             .padding(.all, 10)
-            .background(Color.white)
             .clipShape(.rect(cornerRadius: 15))
     }
 }

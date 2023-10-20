@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FoodlyView: View {
+    @State var isActive: Bool = false
     var body: some View {
             TabView {
                 FoodGridView()
@@ -21,13 +22,13 @@ struct FoodlyView: View {
                         Image(systemName: "cart")
                         Text("Cart")
                     }
+                
                 Text("My Account")
                     .tabItem {
                         Image(systemName: "person")
                         Text("Account")
                     }
             }
-            
             .accentColor(.BrandPrimary)
            
 }

@@ -14,10 +14,10 @@ struct FoodGridView: View {
                 ScrollView {
                     Spacer(minLength: 50)
                     LazyVGrid(columns: viewModel.columns, spacing: 20) {
-                        FoodGridItem()
-                        FoodGridItem()
-                        FoodGridItem()
-                        
+                        ForEach(viewModel.food) { food in
+                            FoodGridItem(food: food)
+                        }
+   
                     }
                     
                 }
@@ -25,6 +25,9 @@ struct FoodGridView: View {
                 .padding()
                 .background(Color.Background)
                 
+            }
+            .onAppear {
+                viewModel.getFood()
             }
     
             
