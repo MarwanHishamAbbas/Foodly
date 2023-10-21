@@ -21,6 +21,8 @@
 		2C95FB562AE16F130044C82A /* FoodGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95FB552AE16F130044C82A /* FoodGridView.swift */; };
 		2C95FB582AE16FD50044C82A /* FoodGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95FB572AE16FD50044C82A /* FoodGridViewModel.swift */; };
 		2C95FB5B2AE175C70044C82A /* FoodGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C95FB5A2AE175C70044C82A /* FoodGridItem.swift */; };
+		2CABE82F2AE40A1F008DB1AA /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CABE82E2AE40A1F008DB1AA /* AccountViewModel.swift */; };
+		2CABE8312AE40B43008DB1AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CABE8302AE40B43008DB1AA /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		2C95FB552AE16F130044C82A /* FoodGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGridView.swift; sourceTree = "<group>"; };
 		2C95FB572AE16FD50044C82A /* FoodGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGridViewModel.swift; sourceTree = "<group>"; };
 		2C95FB5A2AE175C70044C82A /* FoodGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGridItem.swift; sourceTree = "<group>"; };
+		2CABE82E2AE40A1F008DB1AA /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		2CABE8302AE40B43008DB1AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2C533D2B2AE2BB3800958081 /* AccountView.swift */,
+				2CABE82E2AE40A1F008DB1AA /* AccountViewModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				2C7304DA2AE1B71C0044C005 /* Food.swift */,
+				2CABE8302AE40B43008DB1AA /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,10 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C234DCC2AE28D9E0027DD44 /* RemoteImage.swift in Sources */,
+				2CABE82F2AE40A1F008DB1AA /* AccountViewModel.swift in Sources */,
 				2C533D2E2AE2C09E00958081 /* FoodDetailsView.swift in Sources */,
 				2C7304DB2AE1B71C0044C005 /* Food.swift in Sources */,
 				2C95FB562AE16F130044C82A /* FoodGridView.swift in Sources */,
 				2C234DCF2AE296D00027DD44 /* LoadingView.swift in Sources */,
+				2CABE8312AE40B43008DB1AA /* User.swift in Sources */,
 				2C533D2C2AE2BB3800958081 /* AccountView.swift in Sources */,
 				2C95FB452AE163AC0044C82A /* FoodlyView.swift in Sources */,
 				2C95FB5B2AE175C70044C82A /* FoodGridItem.swift in Sources */,

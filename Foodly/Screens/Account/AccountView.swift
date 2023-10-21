@@ -8,42 +8,41 @@
 import SwiftUI
 
 struct AccountView: View {
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var emailAddress = ""
-    @State private var birthDate = Date()
-    @State private var extra = false
-    @State private var extraRefill = false
+    @StateObject var viewModel = AccountViewModel()
     var body: some View {
         NavigationStack {
             Form  {
                 Section {
-                    TextField("First Name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email Address", text: $emailAddress)
+                    TextField("First Name", text: $viewModel.user.firstName)
+                    TextField("Last Name", text: $viewModel.user.lastName)
+                    TextField("Email Address", text: $viewModel.user.emailAddress)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .autocorrectionDisabled()
-                    DatePicker("Birthday", selection: $birthDate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $viewModel.user.birthDate, displayedComponents: .date)
                     Button {
-                        print("Saved")
+                        viewModel.saveChanges()
                     } label: {
                         Text("Save Changes")
+                            .frame(maxWidth: .infinity, alignment: .center)
                     }
                 } header: {
                     Text("Personal Info")
                 }
                 
                 Section {
-                    Toggle("Extra", isOn: $extra)
+                    Toggle("Extra", isOn: $viewModel.user.extra)
                         .tint(Color.BrandPrimary)
-                    Toggle("Extra Refill", isOn: $extraRefill)
+                    Toggle("Extra Refill", isOn: $viewModel.user.extraRefill)
                         .tint(Color.BrandPrimary)
                 } header: {
                     Text("Requests")
                 }
             }
             .navigationTitle("Account Settings")
+        }
+        .onAppear(){
+            viewModel.retrieveUser()
         }
     }
 }
