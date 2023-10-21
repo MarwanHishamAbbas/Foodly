@@ -22,7 +22,7 @@ struct FoodlyView: View {
                         Text("Cart")
                     }
                 
-                Text("My Account")
+                AccountView()
                     .tabItem {
                         Image(systemName: "person")
                         Text("Account")
